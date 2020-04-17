@@ -1,4 +1,4 @@
-fillVal = color(120,0,0)
+
 def setup():
 
     size(400, 400)
