@@ -35,7 +35,19 @@ def draw():
     else:
         fill (120,0,0)
         text("S", width/2+53, height/2+82)
-        
+   
+    if key == CODED:
+        if keyCode == RIGHT:
+            fill(200, 70, 22, 200)    
+            text("M", width/2-60, height/2+60) 
+            fill(200, 80, 22, 80)
+            text("M", width/2-57, height/2+62)
+    if key == CODED:
+        if keyCode == LEFT:
+            fill(210, 120, 22, 200)
+            text("S", width/2+50, height/2+80) 
+            fill(210, 120, 22, 80)
+            text("S", width/2+53, height/2+82)     
    
     
     a = createShape() 
