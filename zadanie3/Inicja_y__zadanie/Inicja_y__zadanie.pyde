@@ -10,7 +10,7 @@ def draw():
     clear()
     textFont = f 
 
-    if (mouseX < width/2-60) and (mouseY < height/2+60):
+    if (mouseX < width/2-60) and (mouseY < height/2+60):# skoro czcionka jest ustawiona na 70pkt, to różnica 120 to trochę za dużo
         fill(40, 117, 22, 200)    
         text("M", width/2-60, height/2+60) 
         fill(40, 117, 22, 80)
@@ -28,10 +28,6 @@ def draw():
              text("S", width/2+50, height/2+80) 
              fill(40, 117, 22, 80)
              text("S", width/2+53, height/2+82)
-                 
-              
-        
-        
     else:
         fill (120,0,0)
         text("S", width/2+53, height/2+82)
@@ -61,3 +57,5 @@ def draw():
     a.vertex(width-100, height/3*2)
     a.endShape(CLOSE)
     shape(a, 25, 25)
+    
+#1,5p
