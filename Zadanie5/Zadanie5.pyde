@@ -1,6 +1,4 @@
 class Bubble(): 
-    
-
     ilosc = 0 
     def __init__(self, arg_x, arg_y, arg_r): 
         self.obrot = 0 
@@ -24,7 +22,7 @@ class Bubble():
 def setup():
     size(400, 400)
     global bubble 
-    bubble = Bubble(width/2, height/2, 50)
+    bubble = Bubble(width/2, height/2, 50) # miały być dwa obiekty
 
 def mouseClicked(): 
     bubble.wcisnij()
@@ -36,4 +34,6 @@ def draw():
     background(120)
     bubble.rysuj() 
     print(Bubble.ilosc) 
-    
+
+# mocno inspirowane moim kodem
+# 1,25pkt
