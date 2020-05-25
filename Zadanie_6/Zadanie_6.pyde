@@ -15,6 +15,9 @@ class LineEllipse(Ellipse):
             line(x+_xLinii_, y, x+_xLinii_, y+self.side)
             _xLinii_ +=space
             
+# miałaś dopisać klasę dziedziczącą z moich (np. rysującą kolorowy pasiasty kwadrat, albo kwadrat w kropki...), a nie zamienić moim nazwy i nazwę jednej funkcji (kwadratu na koło)
+# proszę o poprawienie
+        
 def setup():
     size(500, 500)
     fill(270, 80, 80, 50)
