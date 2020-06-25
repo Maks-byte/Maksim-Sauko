@@ -1,0 +1,6 @@
+Mężczyzna: Dzień dobry u mnie problemy z dostawą towaru. 
+Służba wsparcia : Dzień dobry podajcie numer zamówienia, które zamówiliście, i popatrzymy w czym sprawę. 
+Mężczyzna: Dobrze, oto kod PL97767667 
+Służba wsparcia : Wasz towar czeka wysyłki, są możliwe zwłoki zza pandemii, czekajcie. 
+WZORZEC: FASADA 
+DLACZEGO: Kiedy dzwonimy do sklepu i czynimy zamówienie czy zapytujemy, że z nim, współpracownik służby wsparcia zgłasza się naszym FASADĄ do wszystkich służb i działów sklepu. On nadaje uproszczony interfejs.
