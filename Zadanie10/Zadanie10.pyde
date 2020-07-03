@@ -34,22 +34,6 @@ class Customer(): # klient ma wiele cech, ale z perspektywy biblioteki interesuj
         else:
             self.book = ""
             return False
-class MaksimSauko():
-    book = "" 
-    haveBook = False
-    def requestBook(self, book): 
-        print("Book You want to borrow is choosen.")
-        self.book = book
-        self.haveBook = True
-        return self.book
-    def returnBook(self): 
-        print("Book which you returning is {}".format(self.book))
-        if self.haveBook:
-            self.haveBook = False
-            return self.book
-        else:
-            self.book = ""
-            return False
 
 def setup():
     size(220,100)
@@ -57,7 +41,7 @@ def setup():
     books = ["Naocznosc", "Sens Sztuki", "Harry Potter", "Frozen Kingdom"]
     library = Library(books) # bo biblioteka bez książek, to nie biblioteka
     Madzia = Customer()
-    Maksim = MaksimSauko()
+    Maksim = Customer()
 def draw():
     library.displayAvailableBooks()
     fill(150)
@@ -70,18 +54,18 @@ def draw():
 def mouseClicked(): # poklikajcie kilkakrotnie w przyciski: wypożyczneie dwa razy tej samej książki, próba zwrócenia bez posiadania żadnej? Kto podejmuje działanie? 
     if mouseX >100 and mouseX<200:
         if mouseY >10 and mouseY <30:
-            library.lendBook(Madzia.requestBook("Naocznosc")) 
-        if mouseY >40 and mouseY <60:
-            library.addBook(Madzia.returnBook())
-    if mouseX >100 and mouseX<200:
-        if mouseY >10 and mouseY <30:
+            library.lendBook(Madzia.requestBook("Naocznosc"))
             library.lendBook(Maksim.requestBook("Frozen Kingdom"))
         if mouseY >40 and mouseY <60:
+            library.addBook(Madzia.returnBook())
             library.addBook(Maksim.returnBook())
+            
 import unittest
 class Test(unittest.TestCase):
-    def testName(self):
-        titleOfBook = "Frozen Kingdom"
+    def testName(self): # miały być dwa testy
+        titleOfBook = "Frozen Kingdom" # należałoby przetestować używane w kodzie klasy, a nie nowoutworzoną zmienną
         self.assertEqual("Frozen Kingdom",titleOfBook, "book has not founded")
 if __name__ == '__main__':
     unittest.main()
+    
+# 1pkt
