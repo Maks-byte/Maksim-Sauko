@@ -31,7 +31,7 @@ class MyDog(Pet):
         return 'PugPuG'
     def gimmePaw2(self):
         image(loadImage("lapa2.png"), random(50, width-70), random(50, height-100))
-    def __add__(self, other):
+    def __add__(self, other): # miało być odejmowanie
         return self.name[0]+ ' i ' + other.name[0]
 
 def setup():
@@ -61,8 +61,7 @@ def mouseClicked():
         pet.speak() # dla różnych typów (Cat, Dog) klas wywołujemy to samo polecenie jedną linijką - to właśnie przejaw polimorfizmu
         if isinstance(pet, Dog): # te które są charakterystyczne dla danego typu obiektu, musimy ująć w warunek, bo na niewłaściwym typie wywaliłoby błąd
             pet.gimmePaw()
-    for pet in list_of_pets:
-        pet.speak()
-        if isinstance(pet, MyDog):
+        if isinstance(pet, MyDog): # nie ma potrzeby powtarzać warunków, to co jest wytabowane, jest nim objęte
             pet.gimmePaw2()
-            
+
+#1,25pkt    
