@@ -1,0 +1,14 @@
+Nazwa_Klasy: MaksimSauko
+atrybut_klasy: book
+atrybut: returnBook
+metoda: class MaksimSauko():
+    book = "" 
+    haveBook = False
+    def requestBook(self, book): 
+        print("Book You want to borrow is choosen.")
+        self.book = book
+        self.haveBook = True
+        return self.book
+
+# tu miał być plan klas dla bankomatu
+0/1,5pkt
